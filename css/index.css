@@ -1,0 +1,336 @@
+/* RESETS */
+:root{
+    --starwars: #ffc500;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "DM Serif Text", serif;
+}
+.d-none{
+    display: none;
+}
+
+body{
+    background-image: url(../assets/pictures/sith.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* NAVEGATION BAR */
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+
+    width: 60%;
+    height: 10vh;
+
+    column-gap: 2px;
+    margin-top: 2rem;
+    border-radius: 4rem;
+    padding: 4rem;
+
+    list-style-type: none;
+
+
+    background-color: rgba(0, 0, 0, 0.734);
+    background-image: url(../assets/pictures/lightspeed.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 6px 4px #ff000065;
+    
+    color:var(--starwars);
+
+}
+
+
+
+.swicon{
+    width: 26%;
+    height: 16vh;
+    margin-left: 10rem;
+}
+
+.nav a{
+    text-align: center;
+    text-decoration: none;
+    color:var(--starwars);
+}
+.nav li a i{
+    font-size: 2rem;
+}
+
+.hover{
+   
+    cursor: pointer;
+    transition: 
+        scale 0.25s ease-in,
+        opacity 0.25s ease-in,
+        filter 0.25s ease-in;
+
+        &:hover{
+            scale: 1.2;
+        }
+    
+}
+
+.nav:has(.hover:hover) .nav li a img:not(.hover:hover), .nav:has(.hover:hover) .hover:not(:hover){
+    scale: 0.8;
+    opacity: 0.8;
+    filter: blur(4px);
+}
+
+/* TITLE SECTION */
+
+.title h2{
+    background-image: url(../assets/pictures/lightspeed.jpeg);
+    text-align: center;
+    font-size: 2rem;
+    color: orange;
+    font-style: italic;
+    border-radius: 1rem;
+    width: 70%;
+    margin: 2rem auto;
+    box-shadow: 1px 1px 4px 4px var(--starwars);
+
+}
+
+/* SELECTION SECTION */
+
+.selectContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.734);
+    background-image: url(../assets/pictures/lightspeed.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 4rem;
+    height: 70vh;
+    padding: 2rem;
+    box-shadow: 2px 2px 6px 4px #ffc4005d;
+   /*  border: 1px solid red; */
+    border-radius: 4rem;
+
+}
+
+.selectContent{
+    background-color: rgba(255, 255, 255, 0.012);
+
+    width: 80%;
+    height: 60vh;
+    
+ 
+}
+
+.arrows{
+    color:var(--starwars);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 
+        scale 0.25s ease-in;
+}
+
+.arrows:hover{
+    scale: 1.5;
+}
+
+
+/* selection */
+.selectChars{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.selectChars img{
+    width: 50%;
+    height: 40%;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin: 0 auto;
+    transition: 
+        scale 0.25s ease-in;
+}
+.selectChars img:hover{
+    scale: 1.2;
+}
+.evil:hover{
+    box-shadow: 1px 1px 6px 4px rgba(255, 0, 0, 0.529);
+}
+.good:hover{
+    box-shadow: 1px 1px 8px 6px rgba(20, 20, 248, 0.496);
+}
+
+
+/* modal */
+.selectCards{
+    position:fixed;
+    left:0;
+    top:10%;
+    bottom:0;
+    right:0;
+    height: 84vh;
+
+    background-color:rgba(255, 255, 255, 0.469);
+    background-image: url(../assets/pictures/empire.jpeg);
+    
+    display:none;
+    justify-content: space-around;
+    align-items: center;
+
+    overflow-y:hidden;
+    transition: all ease .5s;
+}
+.content{
+    display: flex;
+    
+    box-sizing: border-box;
+    padding: 4rem;
+    gap: 1rem;
+    overflow-y:hidden;
+    color: var(--starwars)
+}
+
+.contentLeft, .contentRight{
+    width: 50%;
+    margin: 0 auto;
+    margin: 4rem auto;
+
+}
+.contentLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.contentLeft h2{
+    margin-top: 2rem;
+}
+.contentLeft img{
+    width: 50%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.235);
+   
+}
+.contentRight{
+    width: 40%;
+    
+}
+.contentRight p {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.content i{
+  
+    cursor: pointer;
+    height: 3vh;
+    width: 3.8rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    transition: 
+        scale 0.25s ease;
+}
+.content i:hover{
+    color:red;
+    scale: 1.2;
+}
+
+/* footer */
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.521);
+    box-shadow: 1px 1px 6px 4px rgba(255, 191, 0, 0.529);
+    border-radius: 2rem;
+    margin: 2rem auto;
+    background-image: url(../assets/pictures/lightspeed.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    color: var(--starwars);
+}
+
+.about img{
+    width: 20%;
+    border-radius: 4rem;
+    box-shadow: 1px 1px 6px 4px rgba(255, 0, 0, 0.529);
+    transition: 
+        scale 0.25s ease-in;
+}
+.about img:hover{
+    scale: 1.2;
+}
+
+.about .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.012);
+   
+}
+iframe{
+    width: 40%;
+    margin-top: 4rem;
+}
+
+.about i{
+    color:white;
+    font-size: 2rem;
+    transform: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+/* social footer */
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 24%;
+    margin-top: 4rem;
+    border: .4px solid red;
+    padding: 2rem;
+}
+
+/* social/pro custom hovers */
+.facebook:hover, .linkedin:hover{
+    color:rgb(38, 0, 255);
+}
+.instagram:hover{
+    color:rgb(162, 2, 255);
+}
+.twitter:hover{
+    color: rgb(12, 191, 191);
+}
+.github:hover{
+    color:orange;
+}
+.about .right{
+    width: 50%;
+}
