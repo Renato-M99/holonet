@@ -200,7 +200,8 @@ body{
     height: 84vh;
 
     background-image: url(../assets/pictures/empire.jpeg);
-    
+    border-radius: 2rem;
+    box-shadow: 1px 1px 6px 6px var(--starwars);
     display:none;
     justify-content: space-around;
     align-items: center;
@@ -229,9 +230,19 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    
 }
 .contentLeft h2{
+
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2rem;
+
     margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.512);
+    padding: 1rem 8rem 1rem 8rem;
+    margin-bottom: 2rem;
 }
 .contentLeft img{
     width: 50%;
@@ -274,10 +285,11 @@ body{
     box-shadow: 1px 1px 6px 4px rgba(255, 191, 0, 0.529);
     border-radius: 2rem;
     margin: 2rem auto;
-    background-image: url(../assets/pictures/lightspeed.jpeg);
+    /* background-image: url(../assets/pictures/lightspeed.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #000000b7;
 
     color: var(--starwars);
 }
@@ -319,6 +331,8 @@ iframe{
     font-size: 2rem;
     transform: all 0.3s ease-in;
     cursor: pointer;
+    transition: 
+        scale 0.3s ease;
 }
 
 .about .right{
