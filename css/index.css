@@ -285,10 +285,7 @@ body{
     box-shadow: 1px 1px 6px 4px rgba(255, 191, 0, 0.529);
     border-radius: 2rem;
     margin: 2rem auto;
-    /* background-image: url(../assets/pictures/lightspeed.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
+
     background-color: #000000b7;
 
     color: var(--starwars);
@@ -349,7 +346,9 @@ iframe{
     height: 70vh;
 }
 
-
+.right{
+    font-size: 1.4rem;
+}
 
 /* SOCIAL FOOOTER*/
 .social{
