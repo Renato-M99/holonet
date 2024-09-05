@@ -1,148 +1,71 @@
-/* carrossel (swipe logic) */
-const chars = Array.from(document.querySelectorAll(".char"));
-const selectArea = document.querySelector(".selectChars");
+const charDiv = document.querySelector(".selectContent");
+const nextBtn = document.querySelector(".rightA");
+const prevBtn = document.querySelector(".leftA");
 const title = document.querySelector(".title");
-const leftBtn = document.querySelector(".leftA");
-const rightBtn = document.querySelector(".rightA");
-
-
-/* current era */
 let current = 0;
-/* char count */
-let c = 0;
 
-/* Events */
+nextBtn.addEventListener('click', nextEra);
+prevBtn.addEventListener('click', prevEra);
 
-rightBtn.addEventListener("click", () => {
-  
 
-    nextEra();
-    changeSelection();
-    
-})
-leftBtn.addEventListener("click", () => {
 
-   
 
-    prevEra();
-    changeSelection();
-
-})
-
-/* Functions */
-
-function nextEra() {
+function nextEra(){
     if (current >= 0 && current < 3) {
         current++;
-
     }
     else if (current == 3) {
         current = 0;
     }
-
- 
-
-  
-
+/*     clearChars(); */
+    insertChars();
 }
-
-function prevEra() {
+function prevEra(){
     if (current >= 1) {
         current--;
 
     }
     else {
-
         current = 3;
-
     }
-   
-
+    
+    insertChars();
 }
 
-
-function changeSelection() {
-    selectArea.innerHTML = '';
-    title.innerHTML = '';
-
+function insertChars(){
+    clearChars();
     title.innerHTML = `<h2>${era[current].eraTitle}</h2>`;
 
+    
 
+    for(let i = 0; i <= item.length; i++){
 
-    item.forEach(()=>{
-
-        if(current == item[c].era
-        ){
-            let cImg = document.createElement("img");
+        if(current === item[i].era){
+            let cImg = document.createElement('img');
+            cImg.src = `${item[i].charImg}`;
             cImg.classList.add("char");
-            cImg.classList.add(item[c].align);
+            cImg.classList.add(item[i].align);
 
-            cImg.src = item[c].charImg;
-            cImg.setAttribute("data-key", c);
-            cImg.setAttribute("data-name", item[c].name);
-          
-           
-     
-            selectArea.append(cImg);
-
-            c++;
-
-            
-         
+            cImg.setAttribute("data-key", i);
+            cImg.setAttribute("data-name", item[i].name);
+            charDiv.append(cImg);
         }
-      
 
-
-        
-    })
- 
-  
-
-
-}
-
-
-
-function clearSelection() {
-   
-    while (chars.length - 1 <= 8) {
-
-        chars.pop();
-     
-
+        console.log(i)
+       
     }
-   
+    
+}
+
+function clearChars(){
+    title.innerHTML = '';
+    document.querySelectorAll(".char").forEach(()=>{
+        document.querySelector(".char").innerHTML = '';
+    }
+    
+    )
+    charDiv.innerHTML = '';
 }
 
 
 
-
-
-
-/* selectArea.innerHTML = `<img data-key="${c}" data-name="${item[c].name}"  src="${item[c].charImg}">`; */
-
-
-
-
-/* 
-    while (chars.length - 1 <= 8) {
-
-        if (current == item[c].era) {
-            let cImg = document.createElement("img");
-            cImg.classList.add("char");
-            cImg.classList.add(item[c].align);
-
-            cImg.src = item[c].charImg;
-            cImg.setAttribute("data-key", c);
-            cImg.setAttribute("data-name", item[c].name);
-
-            chars.push(cImg);
-            selectArea.append(cImg);
-
-            c++;
-            console.log(chars)
-        }
-        else{
-            alert("erro");
-        }
-    } */
