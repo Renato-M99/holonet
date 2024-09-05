@@ -2,7 +2,7 @@
 0 - old republic
 1 - prequels
 2 - empire
-3 - resistance/first order */
+ */
 let item = [
     /* Era 0 */
     {charImg: "/assets/pictures/charQimir.png",era: 0, align:"evil", name: "Qimir", img: "assets/pictures/cardLuke.png", h3: "Qimir", h4:"Sith Stranger", p: "O ex-Jedi ficou pouco conhecido, mas poucos Jedi sobreviveram. Treinou a Mae e é aprendiz do Mestre Sith Darth Plagueis. Para os poucos que o conheceram notou-se sua extrema habilidade com a Forma Juyo."},
@@ -21,11 +21,17 @@ let item = [
     {charImg: "/assets/pictures/charAnakin.png" , era: 1, align: "good", name: "Anakin Skywalker", img: "assets/pictures/cardAnakin.png", h3: "General Skywalker", h4: "O Escolhido, Cavalheiro Jedi", p: "Anakin possui a maior concentração de midiclorians da galáxia, considerado pelos Jedi 'o Escolhido', acredita-se que o jovem Skywalker é a chave para o equilíbrio da Força de acordo com antiga professia. No entanto, o Mestre Darth Sidious possui outros planos para ele: convertê-lo para o Lado Sombrio e ser o sucessor do mesmo no futuro Império. Anakin é um guerrero implácavel, mestre na Forma Djen-So e mentor de Ahsoka Tano." },
     {charImg: "/assets/pictures/charKenobi.png" , era: 1, align: "good", name: "Obi-Wan Kenobi", img: "assets/pictures/cardKenobi.png", h3: "General Kenobi", h4: "Mestre Jedi Kenobi", p: "Obi-Wan é o mestre de Anakin Skywalker, general do exército da República galática e versado na Forma Suresu. Extremamente disciplinado e ótimo guerreiro, foi posto no Conselho Jedi por sua grande habilidade como Jedi e sua personalidade equilibrada." },
     {charImg: "/assets/pictures/charWindu.png" , era: 1, align: "good", name: "Mace Windu", img: "assets/pictures/cardWindu.png", h3: "General/Mestre Windu", h4: "Grande-Mestre Jedi do Conselho Jedi", p: "Mace Windu é muito poderoso e calmo. O Jedi desenvolveu uma adaptação da Forma Juyo chamada Vaapad, capaz de reter o Lado Sombrio e voltar contra seu oponente. Foi o único Jedi capaz de ganhar de Darth Sidious no duelo." },
-    {charImg: "/assets/pictures/charAhsoka.png" , era: 1, align: "good", name: "Ahsoka Tano", img: "assets/pictures/cardAhsoka.png", h3: "General Tano", h4: "Jedi Padawan", p: "Ahsoka é uma jovem Togruta que foi escolhida para ser aprendiz do Cavalheiro Jedi Anakin Skywalker. É uma jovem exemplar, porém, assim como seu mestre, é um pouco impulsiva." }
+    {charImg: "/assets/pictures/charAhsoka.png" , era: 1, align: "good", name: "Ahsoka Tano", img: "assets/pictures/cardAhsoka.png", h3: "General Tano", h4: "Jedi Padawan", p: "Ahsoka é uma jovem Togruta que foi escolhida para ser aprendiz do Cavalheiro Jedi Anakin Skywalker. É uma jovem exemplar, porém, assim como seu mestre, é um pouco impulsiva." },
     /* Era 2 */
-
-
-
+    {charImg: "/assets/pictures/charVader.png" , era: 2, align: "evil", name: "Vader", img: "assets/pictures/cardVader.png", h3: "Maul", h4:"Darth Maul" , p:"Maul foi pego quando criança do seu clã em Dathomir por Darth Sidious para ser seu novo Aprendiz com o objetivo de destruir seu antigo mestre Darth Plagueis. O Zabrakk foi cortado ao meio pelo Jedi Obi-Wan Kenobi durante uma luta em Naboo. Maul sobreviveu e jurou vingança ao Jedi. Ademais, está constantemente planejando sua ascenção como novo Mestre dos Sith tramando contra Sidious diversas vezes." },
+    {charImg: "/assets/pictures/charBoba.png" , era: 2, align: "evil", name: "Boba", img: "assets/pictures/cardBoba.png", h3: "Maul", h4:"Darth Maul" , p:"Maul foi pego quando criança do seu clã em Dathomir por Darth Sidious para ser seu novo Aprendiz com o objetivo de destruir seu antigo mestre Darth Plagueis. O Zabrakk foi cortado ao meio pelo Jedi Obi-Wan Kenobi durante uma luta em Naboo. Maul sobreviveu e jurou vingança ao Jedi. Ademais, está constantemente planejando sua ascenção como novo Mestre dos Sith tramando contra Sidious diversas vezes." },
+    {charImg: "/assets/pictures/charSidious.png" , era: 2, align: "evil", name: "Sidious", img: "assets/pictures/cardSidious.png", h3: "Maul", h4:"Darth Maul" , p:"Maul foi pego quando criança do seu clã em Dathomir por Darth Sidious para ser seu novo Aprendiz com o objetivo de destruir seu antigo mestre Darth Plagueis. O Zabrakk foi cortado ao meio pelo Jedi Obi-Wan Kenobi durante uma luta em Naboo. Maul sobreviveu e jurou vingança ao Jedi. Ademais, está constantemente planejando sua ascenção como novo Mestre dos Sith tramando contra Sidious diversas vezes." },
+    {charImg: "/assets/pictures/charInquisitor.png" , era: 2, align: "evil", name: "Inquisitor", img: "assets/pictures/cardInquisitor.png", h3: "Maul", h4:"Darth Maul" , p:"Maul foi pego quando criança do seu clã em Dathomir por Darth Sidious para ser seu novo Aprendiz com o objetivo de destruir seu antigo mestre Darth Plagueis. O Zabrakk foi cortado ao meio pelo Jedi Obi-Wan Kenobi durante uma luta em Naboo. Maul sobreviveu e jurou vingança ao Jedi. Ademais, está constantemente planejando sua ascenção como novo Mestre dos Sith tramando contra Sidious diversas vezes." },
+    {charImg: "/assets/pictures/charLuke.png" , era: 2, align: "good", name: "Luke", img: "assets/pictures/cardLuke.png", h3: "Maul", h4:"Darth Maul" , p:"Maul foi pego quando criança do seu clã em Dathomir por Darth Sidious para ser seu novo Aprendiz com o objetivo de destruir seu antigo mestre Darth Plagueis. O Zabrakk foi cortado ao meio pelo Jedi Obi-Wan Kenobi durante uma luta em Naboo. Maul sobreviveu e jurou vingança ao Jedi. Ademais, está constantemente planejando sua ascenção como novo Mestre dos Sith tramando contra Sidious diversas vezes." },
+    {charImg: "/assets/pictures/charHan.png" , era: 2, align: "good", name: "Han", img: "assets/pictures/cardHan.png", h3: "Maul", h4:"Darth Maul" , p:"Maul foi pego quando criança do seu clã em Dathomir por Darth Sidious para ser seu novo Aprendiz com o objetivo de destruir seu antigo mestre Darth Plagueis. O Zabrakk foi cortado ao meio pelo Jedi Obi-Wan Kenobi durante uma luta em Naboo. Maul sobreviveu e jurou vingança ao Jedi. Ademais, está constantemente planejando sua ascenção como novo Mestre dos Sith tramando contra Sidious diversas vezes." },
+    {charImg: "/assets/pictures/charLeia.png" , era: 2, align: "good", name: "Leia", img: "assets/pictures/cardLeia.png", h3: "Maul", h4:"Darth Maul" , p:"Maul foi pego quando criança do seu clã em Dathomir por Darth Sidious para ser seu novo Aprendiz com o objetivo de destruir seu antigo mestre Darth Plagueis. O Zabrakk foi cortado ao meio pelo Jedi Obi-Wan Kenobi durante uma luta em Naboo. Maul sobreviveu e jurou vingança ao Jedi. Ademais, está constantemente planejando sua ascenção como novo Mestre dos Sith tramando contra Sidious diversas vezes." },
+    {charImg: "/assets/pictures/charChewie.png" , era: 2, align: "good", name: "Chewie", img: "assets/pictures/cardChewie.png", h3: "Maul", h4:"Darth Maul" , p:"Maul foi pego quando criança do seu clã em Dathomir por Darth Sidious para ser seu novo Aprendiz com o objetivo de destruir seu antigo mestre Darth Plagueis. O Zabrakk foi cortado ao meio pelo Jedi Obi-Wan Kenobi durante uma luta em Naboo. Maul sobreviveu e jurou vingança ao Jedi. Ademais, está constantemente planejando sua ascenção como novo Mestre dos Sith tramando contra Sidious diversas vezes." },
+   
 
 
 ];
@@ -33,5 +39,5 @@ let era = [
     {id: 0, eraTitle: "Old Repulic (Acolyte)"},
     {id: 1, eraTitle: "Prequels & Clone Wars"},
     {id: 2, eraTitle: "Empire"},
-    {id: 3, eraTitle: "Disney's Era"}
+  
 ];
